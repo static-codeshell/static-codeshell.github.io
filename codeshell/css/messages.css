@@ -1,0 +1,100 @@
+#messages {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#messages li {
+	position: relative;
+	font-size: 12pt;
+	padding: 15px 15px 15px 50px;
+	margin: 0 0 20px;
+	background: white;
+	-webkit-box-shadow: 3px 3px 5px 0px #a0a0a0;
+	   -moz-box-shadow: 3px 3px 5px 0px #a0a0a0;
+	        box-shadow: 3px 3px 5px 0px #a0a0a0;
+}
+#messages li:before, #messages li:after {
+	position: absolute;
+	top: 50%; left: 15px;
+	display: block;
+	padding: 0; border: 0 none;
+	margin: -12px 0 0 0;
+	width: 24px; height: 24px;
+}
+#messages li:before {
+	background: #888888;
+	-webkit-border-radius: 12px;
+	   -moz-border-radius: 12px;
+	        border-radius: 12px;
+
+	content: "";
+}
+#messages li:after {
+	font-family: serif;
+	font-size: 18px;
+	color: white;
+	font-weight: 400;
+	text-align: center;
+	line-height: 24px;
+
+	text-shadow: 0px 0px 1px #999;
+	content: "?";
+}
+#messages li.debug:after {
+	font-size: 16px;
+	content: "D";
+}
+#messages li.info:before {
+	background: #40d3f3;
+}
+#messages li.info:after {
+	content: "i";
+}
+#messages li.success:before {
+	background: #2ecc40;
+}
+#messages li.success:after {
+	font-size: 16px;
+	font-weight: 400;
+	content: "\2713";
+}
+#messages li.warning:before {
+	width: 0; height: 0;
+	left: 13px;
+	background: transparent;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	border-bottom: 24px solid #eded01;
+	margin-top: -13px;
+
+	content: "";
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+}
+#messages li.warning:after {
+	left: 13px;
+	margin-top: -13px;
+	width: 28px;
+	content: "!";
+}
+#messages li.error:before {
+	background: #ff4416;
+}
+#messages li.error:after {
+	font-size: 16px;
+	font-weight: 400;
+	content: "\274C";
+}
+#messages li .close_btn {
+	display: block;
+	position: absolute;
+	right: 10px; top: 50%;
+	margin: -10px 0 0; border: 0; padding: 0;
+	height: 20px;
+
+	color: #888;
+	font-size: 20px;
+	line-height: 1;
+	text-align: right;
+}

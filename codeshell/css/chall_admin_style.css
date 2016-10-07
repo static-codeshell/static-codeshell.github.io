@@ -1,0 +1,14 @@
+@charset "utf-8";
+ul#id_categories li {
+	float: left;
+	list-style-type: none;
+}
+
+ul#id_categories li label {
+	padding-right: 7px;
+}
+
+.form-row .field-box.field-is_solvable p.help {
+	padding-left: 0px !important;
+	margin-left: 0px !important;
+}

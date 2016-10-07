@@ -1,0 +1,96 @@
+blockquote.intro {
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote.intro:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+blockquote.intro p {
+	display: inline;
+}
+.profile {
+	position: relative;
+}
+.profile .profile_sidebar {
+	display: block;
+	position: absolute;
+	left: 0; top: 0;
+	text-align: center;
+}
+.profile .profile_sidebar small a {
+	color: #aaa;
+	font-size: 10pt;
+}
+.profile .avatar {
+	width: 120px;
+	height: 120px;
+	margin: 10px;
+
+	border: 12px solid #ccc;
+
+	-webkit-border-radius: 72px;
+	-moz-border-radius: 72px;
+	border-radius: 72px;
+
+	-webkit-background-clip: content-box;
+	-moz-background-clip: content-box;
+	background-clip: content-box;
+
+	position: static;
+	overflow: hidden;
+}
+.profile .profile_content {
+	display: block;
+	margin: 0 0 0 180px;
+	border-left: 3px solid #ccc;
+	padding: 0 0 2em 10px;
+	min-width: 1px;
+}
+.profile .names {
+	margin-top: 0;
+}
+.profile .names .nick {
+	font-size: 30pt;
+	vertical-align: middle;
+}
+.profile .names .username {
+	background: #e7e7e7;
+	padding: 5px;
+	margin-left: 10px;
+	border: 1px solid #ccc;
+}
+
+form.user_form {
+	text-align: center;
+}
+.c_form_table {
+	width: 100%;
+}
+.c_form_table th {
+	text-align: right;
+	width: 50%;
+	padding: 5px 10px 5px;
+	vertical-align: top;
+}
+.c_form_table td {
+	text-align: left;
+	width: 50%;
+	padding: 5px;
+	vertical-align: top;
+}
+.c_form_table .helptext ul {
+	margin: 5px 0;
+	padding: 0 0 0 1.3em;
+	list-style-position: outside;
+}
+.c_form_table .errorlist {
+	display: block;
+}

@@ -1,0 +1,8 @@
+.profile .profile_sidebar {
+	position: static;
+}
+.profile .profile_content {
+	border: 0 none;
+	margin: 30px 0 0 0;
+}
+
